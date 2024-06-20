@@ -5,7 +5,7 @@
                 <li class="menu-title text-center" style="font-size: 15px;">
                     <?php echo $user['fname'].' '.$user['mname'].' '.$user['lname'] ?>
                 </li>
-                <li class="menu-title text-center" style="margin-top: -20px; font-weight: normal;">
+                <li class="text-center" style="margin: 10px;  font-weight: normal; text-transform: uppercase;">
                     Registrar
                 </li>
                 <li class="<?php echo getCurrentPage() == 'index.php' ? 'active' : ''; ?>">
@@ -136,3 +136,9 @@
         </div><!-- /.navbar-collapse -->
     </nav>
 </aside>
+
+<style>
+ .navbar .menu-title {
+    line-height: 30px;
+}
+</style>
